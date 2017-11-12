@@ -24,7 +24,7 @@
             <label for="valjdinkommun">Välj din kommun:</label>
             <select id="valjdinkommun">
 				</select><br />
-            <label for="postnummer">Postnummer: <input id="postnummer" type="text" required="required" pattern="[0-9]{5}" title="Fem Siffrig Postnummer ex: 12354" /></label><br />
+            <label for="postnummer">Postnummer: <input id="postnummer" type="text" required="required" pattern="[0-9]{5}" title="Fem Siffrig Postnummer ex: 12354" onkeyup="this.value=removeSpaces(this.value)" /></label><br />
             <label for="gatuadress">Gatuadress: <input id="gatuadress" type="text" name="gatuadress" /></label><br />
             <input type="submit" value="Submit">
             <p>Author: <a href="https://github.com/r-rezaee">@r-rezaee</a></p>
@@ -35,6 +35,10 @@
     <p id="result"></p>
 
     <script>
+	function removeSpaces(string) {
+ 		return string.split(' ').join('');
+	}
+
         function skriv() {
             var selectedlan = document.getElementById("valjdittlandskap");
             var selectedlanText = selectedlan.options[selectedlan.selectedIndex].text;
