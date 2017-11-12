@@ -12,7 +12,7 @@
 <body>
     <fieldset>
         <legend> Formulär </legend>
-        <form action="javascript: void(0);" method="post" id="landskap">
+        <form action="javascript: void(0);" method="post" id="landskap" onsubmit="skriv()">
             <label for="valjdittlandskap">Välj ditt landskap:</label>
             <select id="valjdittlandskap">
 				<option value="0">Välj ditt län</option>
@@ -26,7 +26,7 @@
 				</select><br />
             <label for="postnummer">Postnummer: <input id="postnummer" type="text" pattern="[0-9]{5}" title="fem siffrig postnummer" /></label><br />
             <label for="gatuadress">Gatuadress: <input id="gatuadress" type="text" name="gatuadress" /></label><br />
-            <button onclick="skriv()">Submit</button>
+            <input type="submit" value="Submit">
             <p>Author: <a href="https://github.com/r-rezaee">@r-rezaee</a></p>
 
         </form>
