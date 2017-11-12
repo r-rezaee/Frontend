@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<response>
+<kommunidLabel>Stockholmlän</kommunidLabel>
+<kommun kommunid='0'>Alla kommun i Stockholms län</kommun>
+<kommun kommunid="1">Botkyrka</kommun>
+<kommun kommunid="2">Danderyd</kommun>
+<kommun kommunid="3">Ekerö</kommun>
+<kommun kommunid="4">Haninge</kommun>
+<kommun kommunid="5">Huddinge</kommun>
+<kommun kommunid="6">Järfalla</kommun>
+<kommun kommunid="7">Lidingö</kommun>
+<kommun kommunid="8">Norrtälje</kommun>
+<kommun kommunid="9">Nacka</kommun>
+<kommun kommunid="10">Solna</kommun>
+<kommun kommunid="11">Upplands Väsby</kommun>
+<kommun kommunid="12">Vällingby</kommun>
+<kommun kommunid="13">Sollentuna</kommun>
+<kommun kommunid="14">Farsta</kommun>
+<kommun kommunid="15">Märsta</kommun>
+</response>

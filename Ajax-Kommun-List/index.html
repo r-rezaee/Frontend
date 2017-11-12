@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kommuner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend> Formulär </legend>
+        <form action="javascript: void(0);" method="post" id="landskap">
+            <label for="valjdittlandskap">Välj ditt landskap:</label>
+            <select id="valjdittlandskap">
+				<option value="0">Välj ditt län</option>
+				<option value="1">Västerbotten</option>
+				<option value="2">Västernorrland</option>
+				<option value="3">Norrbotten</option>
+				<option value="4">Stockholmlän</option>
+				</select><br />
+            <label for="valjdinkommun">Välj din kommun:</label>
+            <select id="valjdinkommun">
+				</select><br />
+            <label for="postnummer">Postnummer: <input id="postnummer" type="text" pattern="[0-9]{5}" title="fem siffrig postnummer" /></label><br />
+            <label for="gatuadress">Gatuadress: <input id="gatuadress" type="text" name="gatuadress" /></label><br />
+            <button onclick="skriv()">Submit</button>
+            <p>Author: <a href="https://github.com/r-rezaee">@r-rezaee</a></p>
+
+        </form>
+    </fieldset>
+
+    <p id="result"></p>
+
+    <script>
+        function skriv() {
+            var selectedlan = document.getElementById("valjdittlandskap");
+            var selectedlanText = selectedlan.options[selectedlan.selectedIndex].text;
+
+            var selectedkommun = document.getElementById("valjdinkommun");
+            var selectedkommunText = selectedkommun.options[selectedkommun.selectedIndex].text;
+
+            var postnummeret = document.getElementById("postnummer").value;
+
+            document.getElementById("result").innerHTML = "Du har valt landskapet " + selectedlanText + " och kommunen " + selectedkommunText + " och post nummeret " + postnummeret;
+        }
+    </script>
+
+</body>
+
+</html>
