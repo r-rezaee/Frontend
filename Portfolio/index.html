@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#">r-rezaee</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="well" id="about" style="padding-top:120px;">
+            <p>
+                <img src="https://www.plexusmd.com/PlexusMDAPI/Images/ProfilePicture/default_profile.jpg" class="img-circle" alt="profile pic" style="float:right;width:170px;height:auto; padding-bottom:40px; "><br /> Blogger and WebDesigner both back-end
+                and front-end, JavaScript developer. I love to learn and experience new technologies.
+            </p>
+            <hr>
+            <h4 style="padding-bottom:50px;">Web Developer, UI/UX designer, Mobile app developer</h4>
+        </div>
+        <div class="container-fluid text-center">
+            <h4 id="portfolio">Portfolio</h4>
+            <br /><br />
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="My First Project" title="My First Project">
+                </div>
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="My Second Project" title="My Second Project">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="My Third Project" title="My Third Project">
+                </div>
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="My Fourth Project" title="My Fourth Project">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="My Third Project" title="My Fifth Project">
+                </div>
+                <div class="col-sm-6">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-thumbnail" alt="My Fourth Project" title="My Sixth Project">
+                </div>
+            </div>
+            <br/><br/><br/>
+            <div class="row" id="Contact">
+                <h3>Contact Me</h3><br /><br />
+                <div class="container-fluid col-sm-6">
+
+                    <form>
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                            <input type="Email" class="form-control" id="email" placeholder="Email adress">
+                            <input type="tel" class="form-control" id="tel" placeholder="Phone number">
+                            <input type="subject" class="form-control" id="subject" placeholder="Subject">
+                            <div>
+                                <textarea type="message" class="form-control" id="message" placeholder="Message" cols="20" rows="5"></textarea>
+                            </div>
+                            <div> <button type="submit" class="btn btn-default">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6" style="font-size:24px; color:#5b5b5b; padding-top:30px;">
+                    <p>Contact me if you have a question or you want to hire me. I will answer you as fast as possible, leave your mobile number if you want to hear from me faster.</p>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br />
+        <div id="wide">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Abou This Page</h2>
+                    <p>This Page is Mady by R3za using Html, Bootstrap and CSS</p>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Find me on</h2>
+                    <p>
+                        <!--Facebook-->
+                        <button type="button" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btn-tw"><i class="fa fa-twitter left"></i> Twitter</button>
+                        <!--Github-->
+                        <a href="https://github.com/r-rezaee" class="btn btn-default"><i class="fa fa-github"></i>Github</a>
+                        <!--Linkedin-->
+                        <a href="https://www.linkedin.com/in/reza-rezaee" class="btn btn-default"><i class="fa fa-linkedin left"></i> Linkedin</a>
+                    </p>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="container">
+            <p>All Rights Reserved @r-rezaee</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
