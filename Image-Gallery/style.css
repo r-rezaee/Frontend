@@ -58,19 +58,6 @@ img {
     background-color: rgba(0, 0, 0, 0);
 }
 
-
-/*button {
-    border: 0;
-    background: rgba(150, 150, 150, 0.6);
-    text-shadow: 1px 1px 1px white;
-    border: 1px solid #999;
-    border-radius: 4px;
-    position: absolute;
-    cursor: pointer;
-    top: 5px;
-    left: 2px;
-}*/
-
 .thumb-bar img {
     display: block;
     width: 20%;
