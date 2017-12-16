@@ -71,7 +71,15 @@
 	height: auto;
 	padding: 1rem 0 !important;
 }
+@media (min-width: 460px) and (max-width: 767px){
+.profil img{
+	.profil img{
+    	width: 170px;
+    	height: auto;
+}
 
+}	
+	
 
 }/* media query slutar*/
 
