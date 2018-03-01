@@ -1,0 +1,47 @@
+#container {
+    border: 2px solid red;
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    /*background: #0e3154;*/
+}
+
+#avatar {
+    /*border: 1px solid red;*/
+    width: 170px;
+    margin-right: 150px;
+    /* 
+    margin-left: 110px;
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: white;*/
+}
+
+#text-container {
+    padding: 30px 10px 10px 10px;
+    color: white;
+    font-size: 18px;
+    position: static;
+    height: 250px;
+    border: 1px solid red;
+}
+
+#down-part {
+    /*border: 1px solid yellow;*/
+    height: 25px;
+}
+
+#quote-sign {
+    clear: right;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#new-quote {
+    float: right;
+}
