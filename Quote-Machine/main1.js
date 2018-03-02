@@ -14,7 +14,7 @@ $('#new-quote').on('click', function(e) {
                 $('#quote-source').text('');
             }
         },
-
+        cache: false
 
     }); // quote ajax ends here
 
