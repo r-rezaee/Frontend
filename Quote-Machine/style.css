@@ -4,11 +4,10 @@
     height: 400px;
     margin-right: auto;
     margin-left: auto;
-    /*background: #0e3154;*/
+    background: #0e3154;
 }
 
 #avatar {
-    /*border: 1px solid red;*/
     width: 170px;
     margin-right: 150px;
     /* 
@@ -29,8 +28,7 @@
     border: 1px solid red;
 }
 
-#down-part {
-    /*border: 1px solid yellow;*/
+#btn-sec {
     height: 25px;
 }
 
