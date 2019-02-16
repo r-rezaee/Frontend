@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+}
+
+.select {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 100px;
+    background: rgb(81, 62, 184);
+    color: white;
+    margin-top: 5px;
+}
+
+.clear {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 100px;
+}
