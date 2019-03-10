@@ -19,3 +19,9 @@ body {
     top: 30px;
     width: 100px;
 }
+
+h4 {
+    margin: 0 auto;
+    text-align: center;
+    top: 20px;
+}
