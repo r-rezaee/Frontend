@@ -8,4 +8,6 @@
 3. [Ajax kommun list](https://r-rezaee.github.io/Frontend/Ajax-Kommun-List/)
 4. [Portfolio page (Bootstrap)](https://r-rezaee.github.io/Frontend/Portfolio/)
 5. [Image Gallery with Filters](https://r-rezaee.github.io/Frontend/Image-Gallery/)
+6. [Quote Machine - Simpson](https://r-rezaee.github.io/Frontend/quote_machine/)
+
 
