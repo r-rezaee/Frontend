@@ -38,7 +38,6 @@ let randNum = 0;
 
 // show the quote
 function showQuote(){
-    quote_img.src = quotes[randNum].image;
     quote_img.alt = quotes[randNum].character;
     quote_text.innerHTML = quotes[randNum].quote;
     quote_author.innerHTML = quotes[randNum].character;
@@ -48,7 +47,9 @@ function showQuote(){
     }else{
         quote_img.style.transform = null;
     }
+    quote_img.src = quotes[randNum].image;
 
+    
     let tweetUrl = "https://twitter.com/intent/tweet?text=" + quotes[randNum].quote
     + ' - ' + quotes[randNum].character;
 
