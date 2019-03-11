@@ -38,7 +38,6 @@ let randNum = 0;
 
 // show the quote
 function showQuote(){
-    quote_img.style.transform = null;
     quote_img.src = quotes[randNum].image;
     quote_img.alt = quotes[randNum].character;
     quote_text.innerHTML = quotes[randNum].quote;
@@ -46,6 +45,8 @@ function showQuote(){
     console.log(quotes[randNum].characterDirection)
     if(quotes[randNum].characterDirection === "Right"){
         quote_img.style.transform = "scaleX(-1)";
+    }else{
+        quote_img.style.transform = null;
     }
 
     let tweetUrl = "https://twitter.com/intent/tweet?text=" + quotes[randNum].quote
