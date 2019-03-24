@@ -1,7 +1,7 @@
 
-const geoKey = '0574b18b218546348e969ef3a89b3135';
+const geoKey = "";
 const sky_url = "https://api.darksky.net/forecast/";
-const skyKey = "913818969e43b603c1cac2ce963a9ba0";
+const skyKey = "";
 getForecast();
 
 document.querySelector("#search").addEventListener("click", function(){
