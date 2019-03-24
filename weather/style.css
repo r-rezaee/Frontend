@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}    
+h1{
+    margin: 2rem;
+    text-align: center;
+}
+#search_container{
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#hourly_container {
+    display: grid;
+    max-width: 820px;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, 130px);
+    grid-template-rows: repeat(2, 160px);
+}
+
+
+#daily_container {
+    display: grid;
+    max-width: 820px;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-template-rows: repeat(2, 200px);
+
+}
+.forecast_daily{
+    width:150px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #333;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#week_day {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+
+}
+
+
+.forecast{
+    width:130px;
+    height: 160px;
+    padding: 5px;
+    border: 1px solid #333;
+    font-size: 3.4rem;
+    position: relative;
+}
+
+.sum_daily {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    margin-top: 10px;
+    
+}
+
+#time{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #000000;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+.rain{
+    background-color: hsl(200, 43%, 82%);
+}
+
+.daily_temp {
+    display: flex;
+    text-align: center;
+    padding: 0 10px;
+    bottom: 55px;
+    position: absolute;
+    left: 0;
+
+}
+
+#lowTemp{
+    padding: 0 10px;
+}
+
+.hot:before, #highTemp:before {
+    content: "\02191";
+    color: red;
+}
+
+.cold:before, #lowTemp:before {
+    content: "\02193";
+    color: cyan;
+}
+
+#icon_daily > img{
+    position: absolute;
+    right: 5px; 
+    top: 5px;
+    width: 40px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+#icon >img{
+    position: absolute;
+    right: 5px;
+    bottom:5px;
+    width: 40px; 
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+
+#place_name {
+    width: 300px;
+    height: 30px;
+    padding: 8px 15px;
+    border: 1px solid #dbdbdb;
+}
+button {
+    position: relative;
+    padding: 6px 15px;
+    border: 2px solid #207cca;
+    background-color: #207cca;
+    left: -8px;
+    color: #fafafa;
+
+}
+
+.wind, .humidity {
+    font-size: 1rem;
+    display:block;
+}
+
+.sunTime {
+    bottom: 5px;
+    text-align: left;
+    left: 10px;
+    position: absolute;
+    width: 90%;
+}
+
+.sunset_icon{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+ 
+    width: 40px;
+    height: auto;
+}
+
+.sunrise_icon{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+    width: 40px;
+    height: auto;
+}
