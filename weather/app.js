@@ -132,7 +132,8 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
                 // display day of the week
                 const span_date = document.createElement("span");
                 const weekDay = getDay(day.time);
-                span_date.textContent = weekDay;
+                const datum = new Date(day.time*1000).toString().slice(4,10);
+                span_date.innerHTML= `<h4>${weekDay}</h4><h4>${datum}</h4>`;
                 span_date.setAttribute("id", "week_day");
 
                 // display summary for day
