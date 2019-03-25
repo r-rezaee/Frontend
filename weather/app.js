@@ -1,4 +1,3 @@
-
 const geoKey = "";
 const sky_url = "https://api.darksky.net/forecast/";
 const skyKey = "";
@@ -8,14 +7,10 @@ document.querySelector("#search").addEventListener("click", function(){
     let placeName = document.querySelector("#place_name").value.toLowerCase();
     console.log(placeName)
     const url = `https://api.opencagedata.com/geocode/v1/json?q=${placeName}&key=${geoKey}&language=en&pretty=1&no_annotations=1`
-    
     getGeoCode(url);
-    
 })
 
 let lat, lng; 
-
-
 const options={
     method: 'GET',
     mode: 'cors'
@@ -51,7 +46,6 @@ function getGeoCode(url) {
         })
 }
 
-
 function getDay(date) {
     let d = new Date(date*1000);
     let weekday = new Array(7);
@@ -70,8 +64,6 @@ function getDay(date) {
 
 function getHour(time){
     const data_hour = new Date(time * 1000);
-    // const hour = data_hour.getHours().toString().concat(":00");
-    //const hour = `${data_hour.getHours()}:${data_hour.getMinutes()}`;
     const hours = data_hour.getHours();
     const minutes = data_hour.getMinutes().toString();
     if (minutes === "0"){
@@ -80,10 +72,7 @@ function getHour(time){
     else{
         return `${hours}:${minutes}`;
     }
-    
-    
 }
-
 
 function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden") {
     let uri = `${sky_url}${skyKey}/${lat},${lng}?units=si&lang=en`;
@@ -91,9 +80,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
         method: 'GET', 
         mode: 'cors'
     }
-
-
-
 
     const req = new Request(uri, options);
     let docFrg = new DocumentFragment();
@@ -119,9 +105,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
             let wData = jsonData.hourly.data;
             let tempsList =[];
 
-            
-
-
             // Weather daily for next 7 days
             for(let j= 0; j<7; j++){
                 let day = wData_daily[j];
@@ -145,7 +128,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
                 span_icon_daily.setAttribute("id", "icon_daily");
                 span_icon_daily.innerHTML= `<img src="./img/${day.icon}.png" alt=${day.icon}>`;
 
-                
 
                 // display day of the week
                 const span_date = document.createElement("span");
@@ -157,7 +139,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
                 const span_sum_daily = document.createElement("span");
                 span_sum_daily.textContent = day.summary;
                 span_sum_daily.classList.add("sum_daily");
-
 
 
                 // display sunrise and sunset
@@ -178,8 +159,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
             }
             div_container_daily.appendChild(docFrg_daily);
             
-
-
 
 
             // weather hourly for next 24 hours
@@ -210,18 +189,11 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
                 span_humidity.textContent = `Humidity: ${humidity.toPrecision(1)}`;
 
 
-
-
                 // display weather icon and city name
                 document.querySelector(".city").innerHTML= place;
                 const span_icon = document.createElement("span");
                 span_icon.setAttribute("id", "icon");
                 span_icon.innerHTML= `<img src="./img/${hour.icon}.png" alt=${hour.icon}>`;
-
-
-                
-
-
 
                 // highlight the raining hour
                 if(hour.icon == "rain"){
@@ -249,7 +221,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
             div_container.appendChild(docFrg);
 
 
-
             // highlight sunrise, sunset, coldest and warmest hours of day
             let div_hour = document.querySelectorAll(".forecast");
 
@@ -263,11 +234,6 @@ function getForecast(lat=59.3251172 , lng=18.0710935, place= "Stockholm, Sweden"
                     div_hour[index].classList.add("cold");
                 }
             })
-
-
-
-
-
 
         })
         .catch( (err) => {
