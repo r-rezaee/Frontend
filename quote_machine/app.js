@@ -39,7 +39,7 @@ let randNum = 0;
 
 // show the quote
 function showQuote(){
-    //quote_img.style.transform = null;
+    quote_img.style.transform = null;
     quote_img.src = quotes[randNum].image;
     quote_img.alt = quotes[randNum].character;
     quote_text.innerHTML = quotes[randNum].quote;
