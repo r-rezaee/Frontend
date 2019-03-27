@@ -1,82 +1,71 @@
 *{
-    background: #eff0ef;
     box-sizing: border-box;
 }
-h1{
-    margin: 1em auto;
-    text-align: center;
+.wrapper{
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-blockquote {
-    border: 0;
-    padding: 10px;
-    top: -40px;
-    margin-bottom: 10px;
-    background: none;
-    color: gray;
-    font-family: Georgia, serif;
-    font-size: 1.2em;
-    font-style: italic;
-    line-height: 1.4em;
-    position: relative;
-    text-shadow: 0 2px white;
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 140px 3fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-#container {
-    margin-top: 50px;
-    padding: 10px;
-    margin: auto;
-    width: 500px;
-    height: 200px;
-    position: relative;
+.img-box{
+    grid-column: 140px;
+    grid-row: 1;
 }
 
-.img-box {
-    border: 3px solid #9CC1D3;
-    border-radius: 50%;
+img {
+    max-width: 140px;
+    max-height: 160px;
 }
 
-img{
-    
-    padding: 5px;
-    display: block;
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top: 30px;
-    margin-top: 5px;
-    left: -80px; 
-
+.content {
+    padding-left: 20px;
+    grid-column: 2/4;
+    grid-row: 1;
+    height: 160px;
 }
 
-cite span {
-    margin-top: 10px;  
-    bottom: -10px;
-    right: 100px;
-    position: absolute;
-    border: 1px solid lightseagreen;
-    padding: 5px; 
-    z-index: 1;
+.footer {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+.wrapper > .img-box { grid-area: img; }
+.wrapper > .content { grid-area: bd; }
+.wrapper > .footer { grid-area: ft; }
+
+
+@media (min-width: 412px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 140px 3fr;
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+
+        grid-template-areas:
+        "img bd"
+        "ft ft";
+    }
 }
 
-#getQuote {
-    padding: 5px; 
-    background: lightseagreen;
-    bottom: -10px;
-    margin-top: 10px;
-    left: -80px;
-    position: absolute;
-}
+@media (max-width: 411px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
 
-#twitt-button{
-    padding: 5px; 
-    background: lightseagreen;
-    bottom: -10px;
-    position: absolute;
-    margin-top: 10px;
-}
+        grid-template-areas:
+        "bd bd"
+        "img ft"
+;
+    }
 
-#twitt-button > a{
-    padding: 0 5px;
-    background: lightseagreen;
 }
