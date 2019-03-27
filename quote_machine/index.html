@@ -8,30 +8,28 @@
     <title>Quote Machine</title>
 </head>
 <body>
-    <header><h1>Quote Machine</h1></header>
+    <div class="wrapper">
 
-    <div id="container">
-        <div class="quote-container">
-                <button id="getQuote">New Quote</button>
-
-                <button id="twitt-button">
-                    <a id="twitt" href=
-                        "https://twitter.com/intent/tweet?text=I think women and seamen dont mix - Waylon Smithers" target="_blank">
-                            Tweet
-                    </a>
-                </button>
-                <cite>
-                    <span>Waylon Smithers</span>
-                </cite>
-            <div class="img-box">
-                <img src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FWaylonSmithers.png?1497567511840" alt="Waylon Smithers"/>
-            </div>
-            <blockquote>
-                <p>I think women and seamen don't mix
-                </p>
-            </blockquote>
+        <div class="img-box">
+            <img src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FWaylonSmithers.png?1497567511840" alt="Waylon Smithers"/>
+        </div>
+        
+        <div class="content">
+            <p class="quote">I think women and seamen don't mix.</p>
+            <span class="title">Waylon Smithers</span>
+        </div>
+        <div class="footer">
+            <button id="getQuote">New Quote</button>
+            <button id="twitt-button">
+                <a id="twitt" href="https://twitter.com/intent/tweet?text=I think women and seamen dont mix - Waylon Smithers" target="_blank">Tweet</a>
+                
+            </button>
+            
         </div>
     </div>
+      
+
+
     <script src="app.js"></script>
 </body>
 </html>
